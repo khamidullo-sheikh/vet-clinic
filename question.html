@@ -4,12 +4,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ветеринарная клиника | Контакты</title>
+    <title>Ветеринарная клиника | ЧЗВ</title>
     <script src="https://kit.fontawesome.com/52ad92b2dc.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./icons/pet.svg">
     <link rel="stylesheet" href="css/normalize.min.css" type="text/css">
     <link rel="stylesheet" href="css/main.min.css" type="text/css">
-    <link rel="stylesheet" href="css/contact.min.css" type="text/css">
+    <link rel="stylesheet" href="css/question.min.css" type="text/css">
 </head>
 
 <body>
@@ -48,81 +48,37 @@
                         <li class="list__item"><a href="services.html" class="list__link">Наши Услуги</a></li>
                         <li class="list__item"><a href="blog.html" class="list__link">Полезные Статьи</a></li>
                         <li class="list__item"><a href="faq.html" class="list__link">FAQ</a></li>
-                        <li class="list__item"><a href="contact.html" class="list__link  list__link--active">Контакты</a></li>
+                        <li class="list__item"><a href="contact.html" class="list__link">Контакты</a></li>
                     </ul> <a href="question.html" class="link">Задать вопрос</a> </div>
             </div>
         </nav>
-
-        <!-- BANNER -->
-        <section class="banner">
-            <div class="container">
-                <div class="banner__title">
-                    <h1>
-                        Контакты
-                    </h1>
-                    <p>
-                        Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.
-                    </p>
-                </div>
-                <ul class="banner__data">
-                    <li class="data_item">
-                        <ul class="list">
-                            <li class="item"></li>
-                            <li class="item">
-                                <p>
-                                    г. Мариуполь, <br> проспект Победы, 48а
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="data_item">
-                        <ul class="list">
-                            <li class="item"></li>
-                            <li class="item">
-                                <p>
-                                    Пн - Пт 8:00 - 18:00
-                                </p>
-                            </li>
-                            <li class="item">
-                                <p>
-                                    Сб - Вс 8:00 - 14:00
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="data_item">
-                        <ul class="list">
-                            <li class="item"></li>
-                            <li class="item">
-                                <a href="tel:0676347574">
-                                    (067) 634 -75 - 74
-                                </a>
-                                <a href="tel:0637570131">
-                                    (0637) 57 - 01 - 31
-                                </a>
-                                <a href="tel:0982664389">
-                                    (098) 266 - 43 - 89
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </header>
     <!-- CONTENT -->
     <main>
-        <div class="content">
-            <h2>
-                Как нас найти?
-            </h2>
-            <div class="container">
-                <div class="content__location">
-                    <img src="img/contacts/map.png" alt="Map">
+        <div class="container">
+            <div class="feedback">
+                <div class="authorization">
+                    <ul class="list">
+                        <li class="list_item">
+                            Авторизация:
+                        </li>
+                        <li class="list_item">
+                            <a href="#" class="list_item-link">Войти через Google</a>
+                        </li>
+                        <li class="list_item">
+                            <a href="#" class="list_item-link">Войти через Facebook</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="content__building">
-                    <img src="img/about-clinic/building.png" alt="Building">
-                </div>
+                <form action="https://echo.htmlacademy.ru/" method="POST" class="form">
+                    <h2>
+                        Задать вопрос
+                    </h2>
+                    <input type="text" name="name" id="name" required placeholder="Ваше имя" tabindex="1" aria-label="Type your name">
+                    <label for="message">Опишите Ваш вопрос.</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required aria-label="Your message" tabindex="1" placeholder="Например: в каком возрасте можно прививать от бешенства?"></textarea>
+                    <button type="submit" class="btn btn-secondary">Отправить </button>
+                </form>
             </div>
         </div>
     </main>

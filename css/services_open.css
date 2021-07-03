@@ -1,0 +1,253 @@
+
+
+/*--------------*/
+/*--- HEADER ---*/
+/*--------------*/
+
+/*--- BANNER ---*/
+/*--------------*/
+
+.banner{
+    width: 1440px;
+    margin: 0 auto;
+    height: 530px;
+    background-image: url(../img/banner-img.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*---------------*/
+/*--- CONTENT ---*/
+/*---------------*/
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 33px;
+    padding-left: 208px;
+    padding-bottom: 175px;
+}
+
+.main-content{
+    margin-right: 140px;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+}
+
+.page:not(.page:first-child) .page__link::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-image: url(../icons/dot.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+}
+
+.page__link{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--light_color);
+}
+
+.page:last-child .page__link{
+    color: #000;
+}
+
+#spn{
+    color: #FFBD54;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.main-content p{
+    margin-bottom: 22px;
+}
+
+#par{
+    width: 492px;
+}
+
+.main-content .btn{
+    padding: 15px 35px;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 43px;
+}
+
+.main-content .btn-primary::before,
+.main-content .btn-secondary::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../icons/money.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 6px;
+}
+
+.main-content .btn-secondary::before{
+    background-image: url(../icons/document.svg);
+}
+
+.box{
+    width: 305px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    flex: 1 0 auto;
+    background-color: var(--bg-light_color);
+    margin-top: 11px;
+}
+
+.box__img{
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+.box__text{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.box__text p{
+    width: 244px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.box a{
+    margin: 0;
+    margin-top: auto;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.box__text h4::before{
+    content: '28.08.2020';
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: var(--light_color);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+/*----------------*/
+/*--- FEEDBACK ---*/
+/*----------------*/
+
+.feedback{
+    background-image: url(../img/event-bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 190px;
+}
+
+.feedback .container{
+    display: flex;
+    align-items: flex-start;
+    padding: 65px 120px;
+    position: relative;
+}
+
+.feedback .container::before{
+    content: '';
+    width: 811px;
+    height: 636px;
+    background-image: url(../img/kiss-dog.png);
+    background-position: 100% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -155px;
+    bottom: -86px;
+}
+
+.title{
+    width: 276px;
+    margin-right: 60px;
+}
+
+h2{
+    font-size: 5.6rem;
+    line-height: 62px;
+    color: #fff;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.title p{
+    color: #fff;
+}
+
+.form{
+    width: 335px;
+    position: relative;
+}
+
+.form input, textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 16px 22px;
+    background-color: #fff;
+    border: none;
+    outline: 1px solid #fff;
+    font-size: 1.6rem;
+    line-height: 21px;
+    color: var(--light_color);
+}
+
+textarea{
+    resize: vertical;
+    height: 165px;
+    margin-bottom: 25px;
+    padding-top: 33px;
+}
+
+textarea::placeholder{
+    font-size: 1.6rem;
+    line-height: 21px;
+    color: #dbdbdb;
+}
+
+.form label{
+    position: absolute;
+    top: 145px;
+    left: 22px;
+    font-size: 1.6rem;
+    line-height: 21px;
+    color: var(--light_color);
+}

@@ -1,0 +1,175 @@
+
+/*--------------*/
+/*--- HEADER ---*/
+/*--------------*/
+
+/*--- BANNER ---*/
+/*--------------*/
+
+.banner .container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 112px;
+    padding-top: 110px;
+    position: relative;
+}
+
+.banner .container::before{
+    content: '';
+    width: 487px;
+    height: 548px;
+    background-image: url(../img/contacts/dog-doctor.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -35px;
+}
+
+.banner .container::after{
+    content: '';
+    width: 600px;
+    height: 155px;
+    background: radial-gradient(50% 40% at 50% 60%, #3333338c 0%, rgba(196, 196, 196, 0) 100%);
+    opacity: 0.5;
+    position: absolute;
+    bottom: -5px;
+    right: -240px;
+    z-index: -1;
+}
+
+.banner__title{
+    width: 447px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.banner__title p{
+    margin-bottom: 120px;
+}
+
+.banner__data{
+    display: flex;
+    align-items: flex-start;
+}
+
+.data_item{
+    margin-right: 125px;
+}
+
+.banner .item:first-child{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    background-image: url(../img/contacts/location.png);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.data_item:nth-child(2) .item:first-child{
+    background-image: url(../img/contacts/calendar.png);
+}
+
+.data_item:nth-child(3) .item:first-child{
+    background-image: url(../img/contacts/phone.png);
+}
+
+.data_item p,
+.data_item a{
+    font-weight: 500;
+    color: var(--dark_color);
+    font-size: 1.6rem;
+}
+
+.data_item a{
+    display: block;
+    margin-bottom: 10px;
+    transition: color .3s ease;
+}
+
+.data_item a:hover{
+    color: #FFBD54;
+}
+
+
+/*---------------*/
+/*--- CONTENT ---*/
+/*---------------*/
+
+main{
+    padding-top: 400px;
+    padding-bottom: 205px;
+}
+
+.content .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 465px;
+    position: relative;
+}
+
+
+main .container::before,
+main .container::after{
+    content: '';
+    width: 935px;
+    height: 330px;
+    background-image: url(../img/contacts/tracks.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -395px;
+    right: 0;
+}
+
+main .container::after{
+    background-image: url(../img/about-clinic/Object.png);
+    top: -270px;
+    right: 555px;
+    width: 112px;
+    height: 112px;
+}
+
+.content__location{
+    height: 100%;
+    flex: 1 0 60%;
+    position: relative;
+}
+
+.content__location::after{
+    content: '';
+    width: 443px;
+    height: 342px;
+    background-image: url(../img/contacts/dog-smiling.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -295px;
+    left: 0;
+}
+
+.content__location::before{
+    content: '';
+    width: 42px;
+    height: 60px;
+    background-image: url(../img/contacts/loc-icon.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content__building{
+    flex: 1 0 40%;
+    height: 100%;
+}

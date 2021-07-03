@@ -1,0 +1,189 @@
+
+
+/*--------------*/
+/*--- HEADER ---*/
+/*--------------*/
+
+/*--- BANNER ---*/
+/*--------------*/
+
+.banner .container{
+    padding-top: 110px;
+    padding-bottom: 190px;
+    position: relative;
+}
+
+.banner .container::before{
+    content: '';
+    width: 569px;
+    height: 466px;
+    background-image: url(../img/faq/cat.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -130px;
+}
+
+.banner__title{
+    width: 447px;
+    margin-left: 112px;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.banner__title p{
+    margin-bottom: 35px;
+}
+
+.banner__title .btn{
+    background-color: #78C0DE;
+    display: inline-flex;
+    align-items: center;
+}
+
+.banner__title .btn::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../icons/document.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 6px;
+}
+
+/*---------------*/
+/*--- CONTENT ---*/
+/*---------------*/
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 112px;
+    position: relative;
+    top: -120px;
+    padding-bottom: 130px;
+}
+
+.block::before{
+    content: '';
+    width: 654px;
+    height: 640px;
+    background-image: url(../img/faq/parrot.png);
+    background-position: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -60px;
+    right: -180px;
+}
+
+.block::after{
+    content: '';
+    width: 411px;
+    height: 57px;
+    background: radial-gradient(50% 50% at 50% 50%, #333333 0%, rgba(196, 196, 196, 0) 100%);
+    opacity: 0.2;
+    position: absolute;
+    right: -25px;
+    bottom: -80px;
+}
+
+.block__box{
+    width: 755px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px 40px 10px 60px;
+}
+
+.block__box:nth-child(3),
+.block__box:nth-child(6){
+    opacity: .5;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: var(--dark_color);
+    margin-right: 30px;
+}
+
+.data::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+}
+
+.block__box:nth-child(odd) .data::before{
+    background-image: url(../img/faq/pet-yellow.png);
+}
+
+.block__box:nth-child(even) .data::before{
+    background-image: url(../img/faq/pet-blue.png);
+}
+
+.user{
+    display: block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #78C0DE;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.block strong{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 22px;
+    color: var(--dark_color);
+    margin-bottom: 25px;
+}
+
+.block strong button{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url(../icons/left.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+
+.block__box:nth-child(3) strong button,
+.block__box:nth-child(6) strong button{
+    background-image: url(../img/faq/clock.png);
+    transform: rotate(0);
+    pointer-events: none;
+}
+
+.block__box:nth-child(1) strong button{
+    transform: rotate(90deg);
+}
+
+.box__body{
+    width: 577px;
+    padding-bottom: 65px;
+}
